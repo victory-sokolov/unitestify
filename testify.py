@@ -41,7 +41,7 @@ def create_base(class_name: str, test_type):
 def parse_file(file_name: str):
     """Parser file and get module definitions."""
     definitions = {}
-    with open(file_name) as file:
+    with open(file_name, encoding="utf-8") as file:
         tree = ast.parse(file.read())
 
     class_methods = []
