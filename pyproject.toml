@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "testify"
+version = "0.1.0"
+description = "Base unittest scaffold package"
+authors = ["Viktor Sokolov <viktorsokolov.and@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["Django tests", "unittests"]
+homepage = "https://github.com/victory-sokolov/testify"
+repository = "https://github.com/victory-sokolov/testify"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
