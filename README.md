@@ -17,9 +17,10 @@ Options:
   --help       Show this message and exit.
 ```
 
+
 There are two commands available:
-    * `--file` - Requires path to a Python file from which you want to generate the base test file.
-    * `--type` - Test type, `unittest` either `django`
+  * `--file` - Requires path to a Python file from which you want to generate the base test file.
+  * `--type` - Test type, `unittest` either `django`
 
 
 ## Example
