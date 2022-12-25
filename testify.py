@@ -85,6 +85,3 @@ def create_test_file(definitions: dict, file_name: str, test_type: dict):
             
         with open(filename, 'w') as f:
             f.write(test_definition)
-
-if __name__ == '__main__':
-    testify()
