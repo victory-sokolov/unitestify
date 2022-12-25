@@ -74,8 +74,8 @@ def create_test_file(definitions: dict, file_name: str, test_type: dict):
     test_definition = create_base(class_name, test_type)
 
     for method in class_methods:
-        for method_name, args in method.items():
-            parts = method_name.split('_')
+        for method_name, _ in method.items():
+            parts = method_name.split("_")
             docstring = f'"""Test {" ".join(parts)}."""'
             test_definition += "\n".ljust(SPACES)
             test_definition += f"def test_{method_name}(self):".ljust(SPACES)
@@ -83,5 +83,5 @@ def create_test_file(definitions: dict, file_name: str, test_type: dict):
             test_definition += docstring
             test_definition += "\n".ljust(SPACES + 4)
             
-        with open(filename, 'w') as f:
-            f.write(test_definition)
+        with open(filename, "w", encoding="utf-8") as file:
+            file.write(test_definition)
