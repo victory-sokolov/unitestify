@@ -18,8 +18,8 @@ SPACES = 5
 @click.command()
 @click.option("--file", help="Path to file from which to generate test file")
 @click.option("--type", default="unittest", help="Type of test to generate")
-def testify(file: str, type: str):
-    """Testify command line arguments."""    
+def unitestify(file: str, type: str):
+    """Unitestify command line arguments."""    
     if not file:
         click.echo("Path to file is required")
         return

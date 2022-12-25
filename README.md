@@ -1,4 +1,4 @@
-# Testify - Generate skeleton test file from Python file.
+# Unitestify - Generate skeleton test file from Python file.
 
 Support Unnitests and Django tests.
 
@@ -6,10 +6,10 @@ Support Unnitests and Django tests.
 
 
 ```bash
-python testify --help
-Usage: testify.py [OPTIONS]
+python unitestify --help
+Usage: unitestify.py [OPTIONS]
 
-  Testify command line arguments.
+  Unitestify command line arguments.
 
 Options:
   --file TEXT  Path to file from which to generate test file
@@ -17,7 +17,7 @@ Options:
   --help       Show this message and exit.
 ```
 
-There is two commands available:
+There are two commands available:
     * `--file` - Requires path to a Python file from which you want to generate the base test file.
     * `--type` - Test type, `unittest` either `django`
 
